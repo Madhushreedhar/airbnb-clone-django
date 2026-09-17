@@ -32,7 +32,7 @@ class Migration(migrations.Migration):
                 ('check_in', models.TimeField()),
                 ('check_out', models.TimeField()),
                 ('instant_book', models.BooleanField(default=False)),
-                ('host', models.ForeignKey(on_delete='cascade', to=settings.AUTH_USER_MODEL)),
+                ('host', models.ForeignKey(on_delete=models.CASCADE, to=settings.AUTH_USER_MODEL)),
             ],
             options={
                 'abstract': False,
